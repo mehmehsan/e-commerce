@@ -7,30 +7,34 @@
   --secondary-color: #ffb20a;
 }
 
-.App {
+body {
   font-family: "Sacramento", sans-serif;
   text-align: center;
   display: block;
+  margin: 0rem 0rem;
 }
 .Img {
   height: 2rem;
   width: 2rem;
   float: right;
-  margin: 0.5rem 0.5rem;
+  margin: 0rem 2rem;
 }
-h1 {
+header {
   display: block;
-  padding-block-start: 0rem;
+  width: 100%;
+  padding: 0.5rem;
   background-color: var(--secondary-color);
 }
 
-.header {
+#name {
   float: left;
+  margin: 0.2rem auto;
   color: var(--primary-color);
+  font-size: 2rem;
 }
 
 #searchBar {
-  margin: 0rem 2.5rem;
+  margin: 0rem 2rem;
 }
 select {
   height: 2rem;
@@ -42,4 +46,13 @@ input {
 }
 button {
   height: 2.05rem;
+}
+
+div.relative {
+  position: fixed;
+  right: 2rem;
+  top: 0rem;
+  font-family: "Mallanna", sans-serif;
+  color: var(--primary-color);
+  font-size: 1rem;
 }

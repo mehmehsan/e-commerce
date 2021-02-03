@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import { ReactComponent as Img } from "./shopping-cart.svg";
 
 export default function App() {
+  const [cart, setCart] = useState(0);
+
   return (
     <div className="App">
-      <h1 className="header">
-        Flanbieuto
+      <header className="header">
+        <span id="name"> Flanbieuto</span>
         <span id="searchBar">
           <select>
             <option> All </option>
@@ -24,8 +26,11 @@ export default function App() {
             </span>
           </button>
           <Img className="Img" />
+          <div class="relative">
+            <strong>{cart}</strong>
+          </div>
         </span>
-      </h1>
+      </header>
     </div>
   );
 }
