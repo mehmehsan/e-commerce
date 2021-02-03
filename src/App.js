@@ -19,18 +19,26 @@ export default function App() {
             <option> Watches </option>
             <option> Today's Deals</option>
           </select>
-          <input type="text" />
-          <button>
-            <span role="img" aria-label="">
-              🔍
-            </span>
-          </button>
-          <Img className="Img" />
-          <div class="relative">
-            <strong>{cart}</strong>
-          </div>
         </span>
+        <input type="text" />
+        <input type="button" value="🔍" id="button" />
+
+        <Img className="Img" />
+        <div class="relative">
+          <strong>{cart}</strong>
+        </div>
       </header>
+      <nav id="navigation">
+        <ul id="navigationPills">
+          <li> All </li>
+          <li> Clothes </li>
+          <li> Electronics </li>
+          <li> Books </li>
+          <li> Baby </li>
+          <li> Watches </li>
+          <li> Today's Deals</li>
+        </ul>
+      </nav>
     </div>
   );
 }
